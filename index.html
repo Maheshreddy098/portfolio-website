@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Maheswar Reddy - Portfolio</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+      <div class="nav-container">
+        <div class="nav-logo">
+          <a href="#home">Maheswar Reddy</a>
+        </div>
+        <div class="nav-menu" id="nav-menu">
+          <a href="#home" class="nav-link active">Home</a>
+          <a href="#about" class="nav-link">About</a>
+          <a href="#skills" class="nav-link">Skills</a>
+          <a href="#projects" class="nav-link">Projects</a>
+          <a href="#contact" class="nav-link">Contact</a>
+          <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+            <i class="fas fa-moon" id="theme-icon"></i>
+          </button>
+        </div>
+        <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="hero-container">
+        <div class="hero-content">
+          <h1 class="hero-title">
+            Hi, I'm <span class="highlight">Maheswar Reddy</span>
+          </h1>
+          <h2 class="hero-subtitle">
+            web devloper & AWS Enthusiast
+          </h2>
+          <p class="hero-description">
+            Highly motivated and detail-oriented computer science graduate with
+            a solid foundation in Python and AWS. Passionate about creating
+            efficient, user-friendly applications.
+          </p>
+          <div class="hero-buttons">
+            <a href="#contact" class="btn btn-primary">Get In Touch</a>
+            <button class="btn btn-secondary" id="download-resume">
+              <i class="fas fa-download"></i> Download Resume
+            </button>
+          </div>
+        </div>
+        <div class="hero-image">
+          <div class="profile-card">
+            <div class="profile-image">
+              <i class="fas fa-user-circle"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="scroll-indicator">
+        <div class="scroll-arrow"></div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+          <div class="about-text">
+            <div class="career-overview">
+              <h3>Career Overview</h3>
+              <p>
+                Highly motivated and detail-oriented computer science graduate
+                with a solid foundation in Python and AWS. Seeking to leverage
+                my skills in full-stack development and problem-solving to
+                contribute to a collaborative software development team.
+                Passionate about creating efficient, user-friendly applications.
+              </p>
+            </div>
+            <div class="personal-details">
+              <h4>Personal Details</h4>
+              <div class="details-grid">
+                <div class="detail-item">
+                  <i class="fas fa-birthday-cake"></i>
+                  <span>Date of Birth: 05 April 2002</span>
+                </div>
+                <div class="detail-item">
+                  <i class="fas fa-flag"></i>
+                  <span>Nationality: Indian</span>
+                </div>
+                <div class="detail-item">
+                  <i class="fas fa-heart"></i>
+                  <span>Marital Status: Single</span>
+                </div>
+                <div class="detail-item">
+                  <i class="fas fa-map-marker-alt"></i>
+                  <span>Location: Kadiri, Andhra Pradesh</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="about-stats">
+            <div class="stat-card">
+              <div class="stat-icon">
+                <i class="fas fa-graduation-cap"></i>
+              </div>
+              <h3>2+</h3>
+              <p>Years of Study</p>
+            </div>
+            <div class="stat-card">
+              <div class="stat-icon">
+                <i class="fas fa-code"></i>
+              </div>
+              <h3>5+</h3>
+              <p>Technologies</p>
+            </div>
+            <div class="stat-card">
+              <div class="stat-icon">
+                <i class="fas fa-project-diagram"></i>
+              </div>
+              <h3>1</h3>
+              <p>Major Project</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+      <div class="container">
+        <h2 class="section-title">Skills & Technologies</h2>
+        <div class="skills-container">
+          <div class="skill-category">
+            <h3>Programming Languages</h3>
+            <div class="skill-items">
+              <div class="skill-item">
+                <i class="fab fa-python"></i>
+                <span>Python</span>
+              </div>
+              <div class="skill-item">
+                <i class="fab fa-html5"></i>
+                <span>HTML5</span>
+              </div>
+              <div class="skill-item">
+                <i class="fab fa-css3-alt"></i>
+                <span>CSS3</span>
+              </div>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3>AWS Services</h3>
+            <div class="skill-items">
+              <div class="skill-item">
+                <i class="fab fa-aws"></i>
+                <span>EC2</span>
+              </div>
+              <div class="skill-item">
+                <i class="fab fa-aws"></i>
+                <span>Lambda</span>
+              </div>
+              <div class="skill-item">
+                <i class="fab fa-aws"></i>
+                <span>S3</span>
+              </div>
+              <div class="skill-item">
+                <i class="fab fa-aws"></i>
+                <span>RDS</span>
+              </div>
+              <div class="skill-item">
+                <i class="fab fa-aws"></i>
+                <span>ELB</span>
+              </div>
+              <div class="skill-item">
+                <i class="fab fa-aws"></i>
+                <span>API Gateway</span>
+              </div>
+              <div class="skill-item">
+                <i class="fab fa-aws"></i>
+                <span>VPC</span>
+              </div>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3>Database & OS</h3>
+            <div class="skill-items">
+              <div class="skill-item">
+                <i class="fas fa-database"></i>
+                <span>MySQL</span>
+              </div>
+              <div class="skill-item">
+                <i class="fab fa-windows"></i>
+                <span>Windows</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education">
+      <div class="container">
+        <h2 class="section-title">Education</h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h3>Master of Computer Science</h3>
+              <h4>Annamacharya Institute of Technology & Sciences</h4>
+              <p class="location">Rajampeta, Andhra Pradesh, INDIA</p>
+              <p class="grade">Grade: 8.5 CGPA</p>
+              <span class="year">2025</span>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h3>Bachelor of Science</h3>
+              <h4>STSN GCD</h4>
+              <p class="location">Kadiri, Andhra Pradesh, INDIA</p>
+              <p class="grade">Grade: 6.4 CGPA</p>
+              <span class="year">2023</span>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h3>10th Standard (SSC)</h3>
+              <h4>Adarsha High School</h4>
+              <p class="location">Andhra Pradesh, INDIA</p>
+              <p class="grade">Grade: 8.7 CGPA</p>
+              <span class="year">2017</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+      <div class="container">
+        <h2 class="section-title">Project Experience</h2>
+        <div class="project-card">
+          <div class="project-header">
+            <h3>
+              Automated Vehicle Damage Localization and Severity Estimation
+            </h3>
+            <span class="project-duration">Feb 2025 - July 2025</span>
+          </div>
+          <div class="project-content">
+            <div class="project-tech">
+              <h4>Technical Expertise:</h4>
+              <div class="tech-tags">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">TensorFlow</span>
+                <span class="tech-tag">PyTorch</span>
+                <span class="tech-tag">OpenCV</span>
+                <span class="tech-tag">Flask</span>
+              </div>
+            </div>
+            <div class="project-type">
+              <h4>Project Type:</h4>
+              <span>Development</span>
+            </div>
+            <div class="project-responsibilities">
+              <h4>Key Responsibilities:</h4>
+              <ul>
+                <li>Developed an end-to-end deep learning system</li>
+                <li>Designed and implemented three deep learning modules</li>
+                <li>Evaluated the effectiveness of each module</li>
+                <li>Integrated multiple deep learning modules</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="achievements">
+      <div class="container">
+        <h2 class="section-title">Key Achievements</h2>
+        <div class="achievements-grid">
+          <div class="achievement-card">
+            <div class="achievement-icon">
+              <i class="fab fa-aws"></i>
+            </div>
+            <h3>AWS Cloud Practitioner Essential</h3>
+            <p>Successfully completed certification course in Simple Learn</p>
+          </div>
+          <div class="achievement-card">
+            <div class="achievement-icon">
+              <i class="fas fa-certificate"></i>
+            </div>
+            <h3>Software Testing Certification</h3>
+            <p>Certified in software testing by NPTEL</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-content">
+          <div class="contact-info">
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-phone"></i>
+              </div>
+              <div>
+                <h3>Phone</h3>
+                <p>+91 8688665705</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div>
+                <h3>Email</h3>
+                <p>kommamaheshwarreddy143@gmail.com</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div>
+                <h3>Location</h3>
+                <p>Kadiri, Andhra Pradesh, 515521</p>
+              </div>
+            </div>
+          </div>
+          <div class="contact-form">
+            <form id="contact-form">
+              <div class="form-row">
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Your Name"
+                  required
+                />
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Your Email"
+                  required
+                />
+              </div>
+              <input
+                type="text"
+                id="subject"
+                name="subject"
+                placeholder="Subject"
+                required
+              />
+              <textarea
+                id="message"
+                name="message"
+                placeholder="Your Message"
+                rows="5"
+                required
+              ></textarea>
+              <button type="submit" class="btn btn-primary">
+                Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <p>&copy; 2025 Komma Maheswar Reddy. All rights reserved.</p>
+          <div class="social-links">
+            <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Resume Download Modal -->
+    <div id="resume-modal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="modal-header">
+          <i class="fas fa-download"></i>
+          <h2>Download Resume</h2>
+        </div>
+        <p>Your resume download will begin shortly...</p>
+        <div class="download-animation">
+          <div class="download-progress"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
