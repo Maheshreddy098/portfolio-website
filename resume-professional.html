@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Komma Maheswar Reddy - Professional Resume</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
+
+      @page {
+        size: A4;
+        margin: 0.5in;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      :root {
+        --text-color: #2d3748;
+        --bg-color: #ffffff;
+        --sidebar-bg: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        --card-bg: #f7fafc;
+        --border-color: #e2e8f0;
+      }
+
+      [data-theme="dark"] {
+        --text-color: #f7fafc;
+        --bg-color: #1a202c;
+        --sidebar-bg: linear-gradient(135deg, #4a5568 0%, #2d3748 100%);
+        --card-bg: #2d3748;
+        --border-color: #4a5568;
+      }
+
+      body {
+        font-family: "Inter", "Arial", sans-serif;
+        line-height: 1.5;
+        color: var(--text-color);
+        max-width: 8.5in;
+        margin: 0 auto;
+        padding: 0;
+        font-size: 10pt;
+        background: var(--bg-color);
+        transition: background-color 0.3s ease, color 0.3s ease;
+      }
+
+      .resume-container {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        min-height: 100vh;
+      }
+
+      .sidebar {
+        background: var(--sidebar-bg);
+        color: white;
+        padding: 2rem 1.5rem;
+      }
+
+      .main-content {
+        padding: 2rem 2rem;
+        background: var(--bg-color);
+      }
+
+      .profile-section {
+        text-align: center;
+        margin-bottom: 2rem;
+      }
+
+      .profile-image {
+        width: 120px;
+        height: 120px;
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto 1rem;
+        font-size: 3rem;
+        border: 3px solid rgba(255, 255, 255, 0.3);
+      }
+
+      .name {
+        font-size: 18pt;
+        font-weight: 700;
+        margin-bottom: 0.5rem;
+        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+
+      .title {
+        font-size: 11pt;
+        font-weight: 400;
+        opacity: 0.9;
+        margin-bottom: 1.5rem;
+      }
+
+      .contact-section {
+        margin-bottom: 2rem;
+      }
+
+      .sidebar-section {
+        margin-bottom: 2rem;
+      }
+
+      .sidebar-title {
+        font-size: 12pt;
+        font-weight: 600;
+        margin-bottom: 1rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+        padding-bottom: 0.5rem;
+      }
+
+      .contact-item {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+        margin-bottom: 0.75rem;
+        font-size: 9pt;
+      }
+
+      .contact-icon {
+        width: 16px;
+        text-align: center;
+        opacity: 0.8;
+      }
+
+      .skills-list {
+        list-style: none;
+      }
+
+      .skills-list li {
+        margin-bottom: 0.5rem;
+        font-size: 9pt;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+      }
+
+      .skills-list li::before {
+        content: "▪";
+        color: rgba(255, 255, 255, 0.7);
+        font-size: 12pt;
+      }
+
+      .achievements-list {
+        list-style: none;
+      }
+
+      .achievements-list li {
+        margin-bottom: 1rem;
+        font-size: 9pt;
+        line-height: 1.4;
+      }
+
+      .achievement-title {
+        font-weight: 600;
+        margin-bottom: 0.25rem;
+      }
+
+      .main-title {
+        font-size: 16pt;
+        font-weight: 700;
+        color: #2d3748;
+        margin-bottom: 1.5rem;
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+      }
+
+      .section {
+        margin-bottom: 2rem;
+      }
+
+      .section-title {
+        font-size: 13pt;
+        font-weight: 600;
+        color: #4a5568;
+        margin-bottom: 1rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        border-bottom: 2px solid #e2e8f0;
+        padding-bottom: 0.5rem;
+      }
+
+      .objective {
+        font-size: 10pt;
+        line-height: 1.6;
+        color: #4a5568;
+        text-align: justify;
+        margin-bottom: 1.5rem;
+      }
+
+      .experience-item {
+        margin-bottom: 1.5rem;
+        border-left: 3px solid #667eea;
+        padding-left: 1rem;
+      }
+
+      .project-title {
+        font-size: 11pt;
+        font-weight: 600;
+        color: #2d3748;
+        margin-bottom: 0.25rem;
+      }
+
+      .project-duration {
+        font-size: 9pt;
+        color: #718096;
+        font-style: italic;
+        margin-bottom: 0.5rem;
+      }
+
+      .project-tech {
+        font-size: 9pt;
+        color: #4a5568;
+        margin-bottom: 0.5rem;
+      }
+
+      .tech-label {
+        font-weight: 600;
+        color: #2d3748;
+      }
+
+      .responsibilities {
+        margin-top: 0.5rem;
+      }
+
+      .responsibilities ul {
+        list-style: none;
+        padding-left: 0;
+      }
+
+      .responsibilities li {
+        margin-bottom: 0.25rem;
+        font-size: 9pt;
+        color: #4a5568;
+        line-height: 1.4;
+        position: relative;
+        padding-left: 1rem;
+      }
+
+      .responsibilities li::before {
+        content: "→";
+        position: absolute;
+        left: 0;
+        color: #667eea;
+        font-weight: bold;
+      }
+
+      .education-timeline {
+        position: relative;
+      }
+
+      .education-item {
+        margin-bottom: 1.5rem;
+        display: grid;
+        grid-template-columns: 60px 1fr;
+        gap: 1rem;
+        align-items: start;
+      }
+
+      .education-year {
+        font-weight: 600;
+        color: #667eea;
+        font-size: 10pt;
+        text-align: center;
+        background: #edf2f7;
+        padding: 0.5rem;
+        border-radius: 4px;
+      }
+
+      .education-details {
+        flex: 1;
+      }
+
+      .degree {
+        font-weight: 600;
+        color: #2d3748;
+        font-size: 10pt;
+        margin-bottom: 0.25rem;
+      }
+
+      .institution {
+        color: #718096;
+        font-size: 9pt;
+        margin-bottom: 0.25rem;
+        line-height: 1.3;
+      }
+
+      .grade {
+        color: #38a169;
+        font-weight: 600;
+        font-size: 9pt;
+      }
+
+      .personal-details {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+      }
+
+      .detail-row {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 0.5rem;
+        font-size: 9pt;
+      }
+
+      .detail-label {
+        font-weight: 600;
+        color: #2d3748;
+      }
+
+      .detail-value {
+        color: #4a5568;
+      }
+
+      .footer {
+        text-align: center;
+        margin-top: 2rem;
+        padding-top: 1rem;
+        border-top: 1px solid #e2e8f0;
+        font-size: 9pt;
+        color: #718096;
+      }
+
+      .signature-section {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 1rem;
+      }
+
+      .signature-item {
+        text-align: center;
+      }
+
+      .signature-label {
+        font-weight: 600;
+        color: #2d3748;
+      }
+
+      .skill-category-title {
+        font-weight: 600;
+        margin-bottom: 0.5rem;
+        font-size: 10pt;
+      }
+
+      .skill-group {
+        margin-bottom: 1rem;
+      }
+
+      .signature-name {
+        font-weight: 600;
+        margin-top: 1rem;
+      }
+
+      @media print {
+        body {
+          margin: 0;
+          padding: 0;
+        }
+
+        .resume-container {
+          min-height: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="resume-container">
+      <!-- Sidebar -->
+      <div class="sidebar">
+        <div class="profile-section">
+          <div class="profile-image">
+            <i>👨‍💻</i>
+          </div>
+          <div class="name">KOMMA MAHESWAR REDDY</div>
+          <div class="title">Computer Science Graduate & AWS Enthusiast</div>
+        </div>
+
+        <div class="sidebar-section">
+          <div class="sidebar-title">Contact</div>
+          <div class="contact-item">
+            <span class="contact-icon">📱</span>
+            <span>+91 8688665705</span>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">📧</span>
+            <span>kommamaheshwarreddy143@gmail.com</span>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">📍</span>
+            <span>Kadiri, Andhra Pradesh, 515521</span>
+          </div>
+        </div>
+
+        <div class="sidebar-section">
+          <div class="sidebar-title">Technical Skills</div>
+          <div class="skill-group">
+            <div class="skill-category-title">Programming</div>
+            <ul class="skills-list">
+              <li>Python</li>
+              <li>HTML5</li>
+              <li>CSS3</li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <div class="skill-category-title">AWS Services</div>
+            <ul class="skills-list">
+              <li>EC2, Lambda, S3</li>
+              <li>RDS, ELB</li>
+              <li>API Gateway, VPC</li>
+            </ul>
+          </div>
+          <div>
+            <div class="skill-category-title">Database & OS</div>
+            <ul class="skills-list">
+              <li>MySQL</li>
+              <li>Windows</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="sidebar-section">
+          <div class="sidebar-title">Achievements</div>
+          <ul class="achievements-list">
+            <li>
+              <div class="achievement-title">AWS Cloud Practitioner</div>
+              <div>
+                Successfully completed certification course in Simple Learn
+              </div>
+            </li>
+            <li>
+              <div class="achievement-title">Software Testing</div>
+              <div>Certified in software testing by NPTEL</div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="sidebar-section">
+          <div class="sidebar-title">Personal Info</div>
+          <div class="contact-item">
+            <span class="contact-icon">🎂</span>
+            <span>05 April 2002</span>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">🏳️</span>
+            <span>Indian</span>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">💍</span>
+            <span>Single</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Main Content -->
+      <div class="main-content">
+        <div class="main-title">Professional Resume</div>
+
+        <div class="section">
+          <div class="section-title">Career Objective</div>
+          <div class="objective">
+            Highly motivated and detail-oriented computer science graduate with
+            a solid foundation in Python and AWS. Seeking to leverage my skills
+            in full-stack development and problem-solving to contribute to a
+            collaborative software development team. Passionate about creating
+            efficient, user-friendly applications and driving innovation through
+            technology.
+          </div>
+        </div>
+
+        <div class="section">
+          <div class="section-title">Project Experience</div>
+          <div class="experience-item">
+            <div class="project-title">
+              Automated Vehicle Damage Localization and Severity Estimation
+            </div>
+            <div class="project-duration">February 2025 - July 2025</div>
+            <div class="project-tech">
+              <span class="tech-label">Technical Stack:</span> Python
+              (TensorFlow, PyTorch, OpenCV), Flask
+            </div>
+            <div class="project-tech">
+              <span class="tech-label">Project Type:</span> Machine Learning
+              Development
+            </div>
+            <div class="responsibilities">
+              <ul>
+                <li>
+                  Developed an end-to-end deep learning system for automated
+                  vehicle damage assessment
+                </li>
+                <li>
+                  Designed and implemented three specialized deep learning
+                  modules for damage detection
+                </li>
+                <li>
+                  Conducted comprehensive evaluation and performance analysis of
+                  each module
+                </li>
+                <li>
+                  Successfully integrated multiple deep learning modules into a
+                  cohesive system
+                </li>
+                <li>
+                  Utilized computer vision techniques with OpenCV for image
+                  processing and analysis
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="section">
+          <div class="section-title">Education</div>
+          <div class="education-timeline">
+            <div class="education-item">
+              <div class="education-year">2025</div>
+              <div class="education-details">
+                <div class="degree">Master of Computer Science</div>
+                <div class="institution">
+                  Annamacharya Institute of Technology & Sciences<br />Rajampeta,
+                  Andhra Pradesh, India
+                </div>
+                <div class="grade">CGPA: 8.5/10.0</div>
+              </div>
+            </div>
+
+            <div class="education-item">
+              <div class="education-year">2023</div>
+              <div class="education-details">
+                <div class="degree">Bachelor of Science</div>
+                <div class="institution">
+                  STSN GCD<br />Kadiri, Andhra Pradesh, India
+                </div>
+                <div class="grade">CGPA: 6.4/10.0</div>
+              </div>
+            </div>
+
+            <div class="education-item">
+              <div class="education-year">2017</div>
+              <div class="education-details">
+                <div class="degree">Secondary School Certificate (SSC)</div>
+                <div class="institution">
+                  Adarsha High School<br />Andhra Pradesh, India
+                </div>
+                <div class="grade">CGPA: 8.7/10.0</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer">
+          <p>
+            <strong>Declaration:</strong> I hereby declare that the information
+            furnished above is true to the best of my knowledge and belief.
+          </p>
+          <div class="signature-section">
+            <div class="signature-item">
+              <div class="signature-label">Date</div>
+              <div>09/08/2025</div>
+            </div>
+            <div class="signature-item">
+              <div class="signature-label">Signature</div>
+              <div class="signature-name">Komma Maheswar Reddy</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
