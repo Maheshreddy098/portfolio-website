@@ -376,7 +376,7 @@ function initResumeDownload() {
 // Generate and download resume
 function generateAndDownloadResume() {
     // Open the professional resume template in a new window for printing/saving
-    const resumeWindow = window.open('assets/resume-professional.html', '_blank', 'width=800,height=1000');
+    const resumeWindow = window.open('resume-professional.html', '_blank', 'width=800,height=1000');
     
     // Focus on the new window
     if (resumeWindow) {
@@ -710,5 +710,6 @@ function trapFocus(element) {
 // Apply focus trap to modal
 const modal = document.getElementById('resume-modal');
 trapFocus(modal);
+
 
 console.log('Portfolio website initialized successfully! ✨');
